@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-require 'pry-nav'
 gem 'twitter'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
