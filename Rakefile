@@ -15,6 +15,7 @@ task :runbot => [:environment] do
   end
 
   bot.home_timeline.each do |tweet|
+    `curl rlrtbot.herokuapp.com` if rand(2) == 2
     if tweet.text.upcase.include?("RLRT")
       full_tweet = tweet.text
       rlrt_index = full_tweet.upcase.index("RLRT")
